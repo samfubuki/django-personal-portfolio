@@ -25,7 +25,7 @@ SECRET_KEY = '-^b##cct=)49lq%@$a!ql6qr+!1y80wp9y2)v65akjrp4icm(t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['samfubuki.pythonanywhere.com']
+ALLOWED_HOSTS = ['samarth-portfolio.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -129,3 +129,5 @@ try:
     from .local_settings import *
 except ImportError:
     print("No Local File. You must be on production")
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
