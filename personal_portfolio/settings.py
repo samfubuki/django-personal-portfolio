@@ -132,4 +132,4 @@ try:
 except ImportError:
     print("No Local File. You must be on production")
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
